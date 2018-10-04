@@ -9,7 +9,4 @@ class Transfer
     @@sender = from
   end
   
-  def sender 
-    
-  end
 end
