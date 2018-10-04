@@ -24,6 +24,10 @@ class BankAccount
     end
   end
   
+  def close_account
+    
+  end
+  
   private
   def name=(name)
     @name = name
