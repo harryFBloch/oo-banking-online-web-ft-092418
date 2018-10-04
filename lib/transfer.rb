@@ -17,4 +17,8 @@ class Transfer
     end
   end
   
+  def execute_trasaction
+    self.receiver.
+  end
+  
 end
