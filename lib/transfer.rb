@@ -19,7 +19,7 @@ class Transfer
   
   def execute_transaction
     self.receiver.deposit(amount)
-    self.sender.
+    self.sender.balance -= amount
   end
   
 end
