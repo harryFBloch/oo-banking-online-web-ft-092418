@@ -5,7 +5,7 @@ class Transfer
   def initialize(from, to, amount)
     self.to = to
     self.amount = amount
-    self.sender = BankAccount.new(from)
+    self.sender = from
     binding.pry
   end
   
