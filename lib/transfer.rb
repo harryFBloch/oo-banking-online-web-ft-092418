@@ -13,9 +13,9 @@ class Transfer
     if self.sender.valid? && self.receiver.valid?
       true
     else
+       binding.pry
       false
     end
-    binding.pry
   end
   
   def execute_transaction
