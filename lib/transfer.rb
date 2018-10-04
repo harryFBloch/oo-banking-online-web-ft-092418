@@ -31,7 +31,6 @@ class Transfer
   end
   
   def reverse_transfer
-    binding.pry
     self.sender.deposit(self.amount)
     self.receiver.balance -= self.amount
     self.status = "reversed"
