@@ -24,7 +24,6 @@ class Transfer
       self.receiver.deposit(amount)
       self.sender.balance -= amount
       self.status = "complete"
-      self.last_transfer = self
     else
       self.status = "rejected"
       "Transaction rejected. Please check your account balance."
@@ -33,8 +32,8 @@ class Transfer
   
   def reverse_transfer
     binding.pry
-    self.last_transfer.sender.deposit(self.last_transfer.amount)
-    self.last_transfer.receiver.balance -= self.last_transfer.amount
+    self.sender.deposit(self.amount)
+    self.receiver.balance -= self.amount
     self.status = "reversed"
   end
   
