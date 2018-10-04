@@ -6,7 +6,6 @@ class Transfer
     self.to = to
     self.amount = amount
     self.sender = from
-    binding.pry
   end
   
   def sender 
