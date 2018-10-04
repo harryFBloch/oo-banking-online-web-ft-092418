@@ -17,7 +17,7 @@ class Transfer
     end
   end
   
-  def execute_trasaction
+  def execute_transaction
     self.receiver.deposit(amount)
   end
   
