@@ -19,6 +19,7 @@ class Transfer
   
   def execute_transaction
     self.receiver.deposit(amount)
+    self.sender.
   end
   
 end
