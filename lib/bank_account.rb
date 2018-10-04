@@ -9,6 +9,6 @@ class BankAccount
   
   private
   def name=(name)
-    self.name = name
+    @name = name
   end
 end
