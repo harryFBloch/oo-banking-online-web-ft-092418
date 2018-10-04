@@ -5,4 +5,5 @@ class Transfer
     self.from = from
     self.to = to
     self.amount = amount
+  end
 end
