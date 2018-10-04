@@ -34,6 +34,7 @@ class Transfer
   def reverse_transfer
     self.last_transfer.sender.deposit(self.last_transfer.amount)
     self.last_transfer.receiver.balance -= self.last_transfer.amount
+    self.status = "reversed"
   end
   
 end
