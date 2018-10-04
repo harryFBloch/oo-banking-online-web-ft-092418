@@ -9,6 +9,8 @@ class Transfer
     self.status = "pending"
   end
   
-  
+  def valid?
+    
+  end
   
 end
