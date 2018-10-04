@@ -16,6 +16,10 @@ class BankAccount
     "Your balance is $#{self.balance}."
   end
   
+  def valid?
+    
+  end
+  
   private
   def name=(name)
     @name = name
