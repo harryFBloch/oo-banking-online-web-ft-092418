@@ -1,6 +1,7 @@
 require 'pry'
 class Transfer
-  attr_accessor :sender, :receiver, :amount, :status
+  attr_accessor :sender, :receiver, :amount, :status, :last_ranser
+
   
   def initialize(from, to, amount)
     self.receiver = to
@@ -23,6 +24,7 @@ class Transfer
       self.receiver.deposit(amount)
       self.sender.balance -= amount
       self.status = "complete"
+      self.last_transfer = self
     else
       self.status = "rejected"
       "Transaction rejected. Please check your account balance."
