@@ -8,4 +8,8 @@ class Transfer
     self.sender = from
   end
   
+  def reciever
+    
+  end
+  
 end
